@@ -4,7 +4,7 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.xzm.relax.exception.ExceptionType;
 import org.xzm.relax.exception.ServiceException;
-import org.xzm.relax.model.vo.Result;
+import org.xzm.relax.model.dto.Result;
 
 @RestControllerAdvice
 public class ErrorControllerHandler {

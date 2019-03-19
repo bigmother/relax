@@ -2,8 +2,8 @@ package org.xzm.relax.exception;
 
 public enum ExceptionType {
 
-    SUCCESS("10000","success"),
-    UNKNOW_ERROR("00000","unknow error");
+    SUCCESS("00000","success"),
+    UNKNOW_ERROR("00001","unknow error");
 
     private String code;
     private String message;

@@ -1,4 +1,4 @@
-package org.xzm.relax.model.vo;
+package org.xzm.relax.model.dto;
 
 public class Result<T> {
 

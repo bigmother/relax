@@ -6,6 +6,4 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     open-in-view: false
-mybatis:
-  #mapper-locations: classpath:mapper/*Mapper.xml
-  type-aliases-package: org.xzm.relax.dao.model.entity
+    show-sql: true

@@ -4,6 +4,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.bind.annotation.RestController;
 import springfox.documentation.builders.ApiInfoBuilder;
+import springfox.documentation.builders.PathSelectors;
 import springfox.documentation.builders.RequestHandlerSelectors;
 import springfox.documentation.service.ApiInfo;
 import springfox.documentation.service.Contact;
@@ -20,9 +21,10 @@ public class SwaggerConfig {
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo())
                 .select()
-                .apis(RequestHandlerSelectors.withClassAnnotation(RestController.class))
-                //.paths(PathSelectors.any())
-                .build();
+                    .apis(RequestHandlerSelectors.withClassAnnotation(RestController.class))
+                    .paths(PathSelectors.any())
+                    .build()
+                .forCodeGeneration(true);
     }
 
     private ApiInfo apiInfo() {
