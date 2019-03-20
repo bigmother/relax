@@ -2,14 +2,14 @@ package org.xzm.relax.exception;
 
 public class ServiceException extends RuntimeException {
 
-    private String code;
+    private int code;
 
     public ServiceException(ExceptionType exceptionType){
         super(exceptionType.getMessage());
         this.code = exceptionType.getCode();
     }
 
-    public String getCode() {
+    public int getCode() {
         return code;
     }
 }
