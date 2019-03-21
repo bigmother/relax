@@ -8,7 +8,6 @@ import org.xzm.relax.model.dto.create.UserCreate;
 import org.xzm.relax.model.dto.update.UserUpdate;
 import org.xzm.relax.model.entity.User;
 
-@Service
 public interface UserService {
 
     /**

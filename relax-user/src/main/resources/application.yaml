@@ -1,9 +1,18 @@
 spring:
   datasource:
     url: jdbc:mysql://localhost:3306/relax
-    username: root
+    username: relax
     password: 123456
     driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     open-in-view: false
     show-sql: true
+
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: health,info
