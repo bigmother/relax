@@ -4,14 +4,12 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
-import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 import org.xzm.relax.model.dto.Result;
 import org.xzm.relax.model.dto.UserDTO;
 import org.xzm.relax.model.dto.condition.UserCondition;
 import org.xzm.relax.model.dto.create.UserCreate;
 import org.xzm.relax.model.dto.update.UserUpdate;
-import org.xzm.relax.model.entity.User;
 import org.xzm.relax.service.UserService;
 
 import javax.validation.Valid;

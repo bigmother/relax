@@ -1,12 +1,10 @@
 package org.xzm.relax.service;
 
 import org.springframework.data.domain.Page;
-import org.springframework.stereotype.Service;
 import org.xzm.relax.model.dto.UserDTO;
 import org.xzm.relax.model.dto.condition.UserCondition;
 import org.xzm.relax.model.dto.create.UserCreate;
 import org.xzm.relax.model.dto.update.UserUpdate;
-import org.xzm.relax.model.entity.User;
 
 public interface UserService {
 

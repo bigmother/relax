@@ -3,7 +3,9 @@ package org.xzm.relax.exception;
 public enum ExceptionType {
 
     //未知异常
-    UNKNOW_ERROR(1,"unknow error");
+    UNKNOW_ERROR(1,"unknow error"),
+    USER_NOT_EXISTS(1000,"user not exists"),
+    USERNAME_EXISTS(1001,"username exists");
 
     private int code;
     private String message;

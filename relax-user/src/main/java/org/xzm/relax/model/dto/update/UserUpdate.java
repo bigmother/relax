@@ -9,6 +9,5 @@ import lombok.Data;
 @Data
 public class UserUpdate {
     private Long id;
-    private String username;
-    private String password;
+    private String nickname;
 }

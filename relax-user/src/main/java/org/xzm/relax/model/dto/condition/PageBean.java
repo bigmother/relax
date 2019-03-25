@@ -1,6 +1,7 @@
 package org.xzm.relax.model.dto.condition;
 
 import lombok.Data;
+import org.springframework.data.domain.PageRequest;
 
 /**
  * 分页
@@ -11,4 +12,8 @@ import lombok.Data;
 class PageBean {
     protected Integer pageNumber = 1;
     protected Integer pageSize = 20;
+
+    public PageRequest getPageRequest(){
+        return PageRequest.of(pageNumber,pageSize);
+    }
 }
