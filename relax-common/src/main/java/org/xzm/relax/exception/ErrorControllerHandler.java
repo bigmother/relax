@@ -1,9 +1,7 @@
-package org.xzm.relax.controller;
+package org.xzm.relax.exception;
 
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
-import org.xzm.relax.exception.ExceptionType;
-import org.xzm.relax.exception.ServiceException;
 import org.xzm.relax.model.dto.Result;
 
 @RestControllerAdvice
