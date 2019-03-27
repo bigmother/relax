@@ -1,6 +1,7 @@
 package org.xzm.relax.service;
 
 import org.springframework.data.domain.Page;
+import org.xzm.relax.model.dto.LoginDTO;
 import org.xzm.relax.model.dto.UserDTO;
 import org.xzm.relax.model.dto.condition.UserCondition;
 import org.xzm.relax.model.dto.create.UserCreate;
@@ -34,5 +35,12 @@ public interface UserService {
      * @param id 用户id
      */
     void delete(Long id);
+
+    /**
+     * 认证用户
+     * @param loginDTO 认证信息
+     * @return 认证用户
+     */
+    UserDTO authenticate(LoginDTO loginDTO);
 
 }
