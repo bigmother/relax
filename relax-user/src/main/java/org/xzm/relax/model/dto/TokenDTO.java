@@ -17,6 +17,4 @@ public class TokenDTO {
     private String token;
     @ApiModelProperty("刷新Token")
     private String refreshToken;
-    @ApiModelProperty("过期时间")
-    private Date expiredDate;
 }
