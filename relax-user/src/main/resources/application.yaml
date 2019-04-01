@@ -1,12 +1,13 @@
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/relax
-    username: relax
-    password: 123456
     driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/relax?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+    username: root
+    password: 123456
   jpa:
     open-in-view: false
     show-sql: true
+    database: mysql
   redis:
     host: localhost
   cache:

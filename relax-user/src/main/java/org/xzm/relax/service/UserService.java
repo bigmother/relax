@@ -6,6 +6,7 @@ import org.xzm.relax.model.dto.UserDTO;
 import org.xzm.relax.model.dto.condition.UserCondition;
 import org.xzm.relax.model.dto.create.UserCreate;
 import org.xzm.relax.model.dto.update.UserUpdate;
+import org.xzm.relax.model.entity.User;
 
 public interface UserService {
 
@@ -42,5 +43,4 @@ public interface UserService {
      * @return 认证用户
      */
     UserDTO authenticate(LoginDTO loginDTO);
-
 }

@@ -6,7 +6,8 @@ public enum ExceptionType {
     UNKNOW_ERROR(1,"unknow error"),
     USER_NOT_EXISTS(1000,"user not exists"),
     USERNAME_EXISTS(1001,"username exists"),
-    PASSWORD_INVALID(1002,"password invalid");
+    PASSWORD_INVALID(1002,"password invalid"),
+    LOGGING_ERROR(1003,"logging error");
 
     private int code;
     private String message;
