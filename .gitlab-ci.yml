@@ -1,0 +1,15 @@
+stages:
+  - build
+  - deploy
+
+build:
+  stage: build
+  script:
+    - mvn clean
+    - mvn build
+    - mvn package
+
+deploy:
+  stage: deploy
+  script:
+    - sh script/deploy.sh
